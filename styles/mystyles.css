@@ -1,4 +1,8 @@
 /*global*/
+:root{
+    --primary: darkgoldenrod;
+    --secondary: #dedede;
+}
 html{
     font-size: 62.5%;/*-1rem+10px*/
 }
@@ -36,6 +40,44 @@ h3{
     margin-left: auto;
     margin-right: auto;
 }
+.btn{
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+}
+.btn-details{
+    display: block;
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.btn-contact-us{
+    display: block;
+    background-color: var(--primary);
+    text-align: center;
+}
+.table{
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    border-collapse: collapse;
+}
+td,th{
+    padding: 0.5rem;
+    border-bottom: 1px solid white;
+}
+.table-header{
+    background-color: var(--primary);
+    color: white;
+}
+.table-content{
+    background-color: var(--secondary);
+}
 /*header*/
 .site-header{
     background-image: url(../img/header.jpg);
@@ -62,4 +104,62 @@ h3{
 .header-text-container p{
     font-size: 2.4rem;
     font-weight: 700;
+}
+/*about*/
+.about-container{
+    display: flex;
+    justify-content: space-around;
+}
+.about-item{
+    padding: 1rem;
+    margin: 1rem;
+    text-align: justify;
+}
+.about-item h3{
+    text-align: center;
+}
+.about-item img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*house-container*/
+.house-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1rem;
+}
+.house-item{
+    background-color: var(--secondary);
+}
+.house-text{
+    padding: 1rem;
+}
+.price{
+    color: rgb(32, 94, 32);
+}
+.house-item ul{
+    list-style-type: none;
+}
+.icons{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+/*footer*/
+.footer-container{
+    background-image: url(../img/encuentra.jpg);
+    height: 20vh;
+    background-size: cover;
+    color: white;
+}
+.footer-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10vh;
+}
+.test{
+    margin: auto;
+    padding-top: 60px;
 }
